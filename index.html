@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A luxury watch landing page inspired by classic Swiss watchmaking aesthetics." />
+  <title>ROLEX — Luxury Watches</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav" id="top">
+    <a class="logo" href="#top" aria-label="Rolex home">
+      <span class="crown">♛</span>
+      <span>ROLEX</span>
+    </a>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+    <nav class="links">
+      <a href="#collection">Collection</a>
+      <a href="#craft">Craftsmanship</a>
+      <a href="#story">Heritage</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#collection">Explore</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">OYSTER PERPETUAL</p>
+        <h1>Time, perfected.</h1>
+        <p class="hero-copy">
+          Discover a curated showcase of iconic luxury watches, precision engineering
+          and timeless Swiss-inspired design.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#collection">View collection</a>
+          <a class="button button-ghost" href="#craft">Discover the craft</a>
+        </div>
+      </div>
+      <div class="hero-watch" aria-label="Stylized luxury watch illustration">
+        <div class="watch-shadow"></div>
+        <div class="watch">
+          <div class="crown-knob"></div>
+          <div class="bezel"><div class="dial">
+            <span class="marker m12">12</span><span class="marker m3">3</span>
+            <span class="marker m6">6</span><span class="marker m9">9</span>
+            <span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="dot d4"></span>
+            <span class="hand hour"></span><span class="hand minute"></span><span class="hand second"></span>
+            <span class="center-dot"></span>
+            <span class="date">05</span>
+          </div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><strong>1905</strong><span>Heritage</span></div>
+      <div><strong>100m</strong><span>Water resistance*</span></div>
+      <div><strong>∞</strong><span>Built for generations</span></div>
+      <div><strong>Swiss</strong><span>Inspired precision</span></div>
+    </section>
+
+    <section class="section" id="collection">
+      <div class="section-heading">
+        <p class="eyebrow">THE COLLECTION</p>
+        <h2>Icons of distinction.</h2>
+        <p>Three timeless directions for every expression of style.</p>
+      </div>
+      <div class="cards">
+        <article class="watch-card featured">
+          <div class="card-watch gold"><span></span></div>
+          <div class="card-copy"><p class="card-label">CLASSIC</p><h3>Oyster Classic</h3><p>Clean proportions, polished details and an unmistakable silhouette.</p><button data-toast="Oyster Classic selected">Explore model →</button></div>
+        </article>
+        <article class="watch-card">
+          <div class="card-watch black"><span></span></div>
+          <div class="card-copy"><p class="card-label">SPORT</p><h3>Explorer Black</h3><p>A confident, technical aesthetic designed for modern adventures.</p><button data-toast="Explorer Black selected">Explore model →</button></div>
+        </article>
+        <article class="watch-card">
+          <div class="card-watch silver"><span></span></div>
+          <div class="card-copy"><p class="card-label">ELEGANCE</p><h3>Silver Date</h3><p>Refined finishing and balanced geometry for understated luxury.</p><button data-toast="Silver Date selected">Explore model →</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="craft" id="craft">
+      <div class="craft-image">
+        <div class="precision-ring"><span>PRECISION</span></div>
+      </div>
+      <div class="craft-copy">
+        <p class="eyebrow">THE ART OF WATCHMAKING</p>
+        <h2>Made to matter.</h2>
+        <p>
+          Every component tells a story of patience and precision. From the movement
+          beneath the dial to the final polished surface, the details are designed to
+          endure.
+        </p>
+        <div class="feature-list">
+          <div><span>01</span><p><b>Precision movement</b><br>Engineered for reliable performance.</p></div>
+          <div><span>02</span><p><b>Iconic proportions</b><br>Designed around the wrist, not the trend.</p></div>
+          <div><span>03</span><p><b>Enduring materials</b><br>Selected for beauty and resilience.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story" id="story">
+      <div>
+        <p class="eyebrow">A LEGACY OF EXCELLENCE</p>
+        <h2>Luxury that never needs to shout.</h2>
+      </div>
+      <p>
+        A strong visual identity, restrained typography and meticulous detail create a
+        digital experience worthy of fine watchmaking. This page is a front-end demo
+        and is not an official Rolex website.
+      </p>
+    </section>
+
+    <section class="newsletter" id="contact">
+      <div>
+        <p class="eyebrow">STAY IN THE MOMENT</p>
+        <h2>Receive the latest stories.</h2>
+      </div>
+      <form id="newsletterForm">
+        <input type="email" placeholder="Your email address" aria-label="Email address" required />
+        <button class="button button-primary" type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-logo">♛ ROLEX</div>
+    <p>© 2026 Luxury Watch Demo. Created for portfolio / GitHub use.</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
